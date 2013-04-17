@@ -76,13 +76,27 @@
 
     <abstract>
 			<t>
-				This document 
+				This document declares ununsed IPv4 options to historic. 
 			</t>
     </abstract>
   </front>
 
   <middle>
-    <section title="Introduction">
+		<section title="Introduction">
+
+			<t>
+				During IPv4 development several IP options where specified and
+				standardized. A major part in the original IPv4 RFC. A larger part of
+				these options was never widely deployed. Furthermore, if applicable,
+				higher level protocols adopt the funtionality or was never used.
+			</t>
+
+			<t>
+				But these options are still referenced in the RFC and never marked as
+				obsolete. With the result that products are still tested if IPv4 option
+				conformance is fullfilled.
+			</t>
+
       <t>The original specification of xml2rfc format is in <xref
       target="RFC2629">RFC&nbsp;2629</xref>.</t>
 
@@ -94,79 +108,20 @@
       </section>
     </section>
 
-    <section anchor="simple_list" title="Simple List">
-      <t>List styles: 'empty', 'symbols', 'letters', 'numbers', 'hanging',
-      'format'.</t>
+		<section anchor="simple_list" title="Historic Options">
 
-      <t><list style="symbols">
-          <t>First bullet</t>
+			<t>
+				The following IPv4 options are declared as historic.
+			</t>
 
+			<t>
+				<list style="symbols">
+					<t>First bullet</t>
           <t>Second bullet</t>
-        </list> You can write text here as well.</t>
+				</list>
+			</t>
     </section>
 
-    <section title="Figures">
-      <t>Figures should not exceed 69 characters wide to allow for the indent
-      of sections.</t>
-
-      <figure align="center" anchor="xml_happy">
-        <preamble>Preamble text - can be omitted or empty.</preamble>
-
-        <artwork align="left"><![CDATA[
-+-----------------------+
-| Use XML, be Happy :-) |
-|_______________________|
-            ]]></artwork>
-
-        <postamble>Cross-references allowed in pre- and postamble. <xref
-        target="min_ref" />.</postamble>
-      </figure>
-
-      <t>The CDATA means you don't need to escape meta-characters (especially
-      &lt;&nbsp;(&amp;lt;) and &amp;&nbsp;(&amp;amp;)) but is not essential.
-      Figures may also have a title attribute but it won't be displayed unless
-      there is also an anchor. White space, both horizontal and vertical, is
-      significant in figures even if you don't use CDATA.</t>
-    </section>
-
-    <!-- This PI places the pagebreak correctly (before the section title) in the text output. -->
-
-    <?rfc needLines="8" ?>
-
-    <section title="Subsections and Tables">
-      <section title="A Subsection">
-        <t>By default 3 levels of nesting show in table of contents but that
-        can be adjusted with the value of the "tocdepth" processing
-        instruction.</t>
-      </section>
-
-      <section title="Tables">
-        <t>.. are very similar to figures:</t>
-
-        <texttable anchor="table_example" title="A Very Simple Table">
-          <preamble>Tables use ttcol to define column headers and widths.
-          Every cell then has a "c" element for its content.</preamble>
-
-          <ttcol align="center">ttcol #1</ttcol>
-
-          <ttcol align="center">ttcol #2</ttcol>
-
-          <c>c #1</c>
-
-          <c>c #2</c>
-
-          <c>c #3</c>
-
-          <c>c #4</c>
-
-          <c>c #5</c>
-
-          <c>c #6</c>
-
-          <postamble>which is a very simple example.</postamble>
-        </texttable>
-      </section>
-    </section>
 
     <section anchor="nested_lists" title="More about Lists">
       <t>Lists with 'hanging labels': the list item is indented the amount of
